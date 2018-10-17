@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GymApp</string>
+    <string name="menu_blog_video">Blogs &amp; Videos</string>
+    <string name="menu_nutrition_diet">Nutrition &amp; Diet</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_workout_planner">Workout Planner</string>
+    <string name="menu_setting">Setting</string>
+
+
+    <string-array name="goal">
+        <item>Fat Loss</item>
+        <item>Muscle Gain</item>
+        <item>Healthy Lifestyle</item>
+        <item>Diabetes Specific lifestyle</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="physical_activity">
+        <item>None</item>
+        <item>Usual Walk</item>
+        <item>Exercise 1-3 times a week</item>
+        <item>Exercise 4-7 times a week</item>
+    </string-array>
+
+</resources>
