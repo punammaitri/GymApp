@@ -2,37 +2,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_blog"
-        android:enabled="true"
         android:icon="@drawable/ic_music_note"
-        android:title="@string/menu_blog_video"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_blog_video" />
 
     <item
         android:id="@+id/menu_diet"
-        android:enabled="true"
         android:icon="@drawable/ic_music_note"
-        android:title="@string/menu_nutrition_diet"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_nutrition_diet" />
 
     <item
         android:id="@+id/menu_profile"
-        android:enabled="true"
         android:icon="@drawable/ic_music_note"
-        android:title="@string/menu_profile"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_profile" />
 
     <item
         android:id="@+id/menu_workout"
-        android:enabled="true"
         android:icon="@drawable/ic_music_note"
-        android:title="@string/menu_workout_planner"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_workout_planner" />
 
     <item
         android:id="@+id/menu_setting"
-        android:enabled="true"
         android:icon="@drawable/ic_music_note"
-        android:title="@string/menu_setting"
-        app:showAsAction="ifRoom" />
+        android:title="@string/menu_setting" />
 
 </menu>
