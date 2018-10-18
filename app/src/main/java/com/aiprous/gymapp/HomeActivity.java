@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this, AddDetailsActivity.class));
                 break;
             case R.id.llWorkout:
+                startActivity(new Intent(this, AllWorkoutPlannerActivity.class));
                 break;
             case R.id.llSetting:
                 break;

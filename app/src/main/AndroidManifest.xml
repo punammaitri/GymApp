@@ -16,12 +16,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WorkoutPlannerActivity" />
-        <activity android:name=".BlogsVideoActivity" />
-        <activity android:name=".NutritionDietActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".AddDetailsActivity" />
+
+        <activity
+            android:name=".AddWorkoutPlannerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".BlogsVideoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".NutritionDietActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity android:name=".ProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+        <activity
+            android:name=".SettingActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".AddDetailsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".AllWorkoutPlannerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
     </application>
 
 </manifest>
