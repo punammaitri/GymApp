@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,13 +17,12 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AllWorkoutAdapter extends RecyclerView.Adapter<AllWorkoutAdapter.ViewHolder> {
+public class NutitionDietAdapter extends RecyclerView.Adapter<NutitionDietAdapter.ViewHolder> {
 
-
-    private ArrayList<AddWorkoutModel> myOrdersArrayList;
+    private ArrayList<AddNutritionModel> myOrdersArrayList;
     private Context mContext;
 
-    public AllWorkoutAdapter(Context mContext, ArrayList<AddWorkoutModel> myOrdersArrayList) {
+    public NutitionDietAdapter(Context mContext, ArrayList<AddNutritionModel> myOrdersArrayList) {
         this.mContext = mContext;
         this.myOrdersArrayList = myOrdersArrayList;
     }
@@ -31,17 +31,19 @@ public class AllWorkoutAdapter extends RecyclerView.Adapter<AllWorkoutAdapter.Vi
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.all_workout_planner_item, parent, false);
+                .inflate(R.layout.activity_nutrition_planner_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
 
-        holder.txtDays.setText("Day " + myOrdersArrayList.get(position).getNo_of_days());
-        holder.txtExerciseName.setText(myOrdersArrayList.get(position).getExercise_name());
-        holder.txtWeightRange.setText(myOrdersArrayList.get(position).getWeight_range());
-        holder.txtReps.setText(myOrdersArrayList.get(position).getReps());
+
+        holder.txtDay.setText(myOrdersArrayList.get(position).getNo_of_days());
+        holder.txtTime.setText(myOrdersArrayList.get(position).getTime());
+        holder.txtMeal.setText(myOrdersArrayList.get(position).getMeal());
+        holder.txtName.setText(myOrdersArrayList.get(position).getName());
+        holder.txtQty.setText(myOrdersArrayList.get(position).getQuantity());
 
         holder.cardmain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,21 +54,25 @@ public class AllWorkoutAdapter extends RecyclerView.Adapter<AllWorkoutAdapter.Vi
         });
     }
 
+
     @Override
     public int getItemCount() {
         return (myOrdersArrayList == null) ? 0 : myOrdersArrayList.size();
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.txtDays)
-        TextView txtDays;
-        @BindView(R.id.txtExerciseName)
-        TextView txtExerciseName;
-        @BindView(R.id.txtWeightRange)
-        TextView txtWeightRange;
-        @BindView(R.id.txtReps)
-        TextView txtReps;
+        @BindView(R.id.txtDay)
+        TextView txtDay;
+        @BindView(R.id.txtTime)
+        TextView txtTime;
+        @BindView(R.id.txtMeal)
+        TextView txtMeal;
+        @BindView(R.id.txtName)
+        TextView txtName;
+        @BindView(R.id.txtQty)
+        TextView txtQty;
         @BindView(R.id.cardmain)
         CardView cardmain;
 

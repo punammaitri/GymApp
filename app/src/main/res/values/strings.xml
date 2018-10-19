@@ -88,9 +88,20 @@
         <item>31</item>
     </string-array>
 
+    <string-array name="select_days">
+        <item>Select days</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
 
     <string-array name="select_goal">
-        <item>Select goal</item>
+        <item>Specific goal</item>
         <item>Loose belly fat</item>
         <item>Loose love handles</item>
         <item>Increase belly fat</item>

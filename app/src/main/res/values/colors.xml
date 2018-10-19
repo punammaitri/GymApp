@@ -5,4 +5,23 @@
     <color name="colorAccent">#D81B60</color>
     <color name="lightGray">#7B7B7B</color>
     <color name="colorlightGray">#8d7b7b7b</color>
+
+
+    <color name="orange">#fff8f8</color>
+    <color name="sky_blue">#f5faff</color>
+    <color name="border_orange">#D51E37</color>
+    <color name="border_blue">#006CE2</color>
+    <color name="divider_orange">#3cff7058</color>
+    <color name="divider_blue">#3c61a2ef</color>
+    <color name="alert_dialog_gray">#414142</color>
+    <color name="percent_50_black">#80000000</color>
+    <color name="fab_color">#FF7E79</color>
+    <color name="green_color_code">#17B415</color>
+    <color name="Confirmed">#008000</color>
+    <color name="Treated">#006CE2</color>
+    <color name="header_theme">#c4006ce2</color>
+    <color name="Cancelled">#D51E37</color>
+    <color name="Requested">#e56114</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color_border">#dddddd</color>
 </resources>

@@ -1,9 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SettingActivity">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/text_size_12"
+    android:layout_marginRight="@dimen/text_size_12"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_view_left_color_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:text="FAQs"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_view_left_color_blue"
+        android:elevation="@dimen/height_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:text="End User Licence"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_view_left_color_orange"
+        android:elevation="@dimen/height_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/buttonPolice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:text="Support Helpline Chat"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_view_left_color_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:text="Notification Settings"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_view_left_color_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:text="Workout alarm"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -33,9 +33,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/editext_border"
                         android:hint="Enter height"
                         android:imeOptions="actionNext"
                         android:maxLines="1"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
                         android:singleLine="true"
                         android:textColor="@android:color/black" />
 
@@ -43,10 +48,15 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:layout_weight="1"
+                        android:background="@drawable/editext_border"
                         android:hint="Enter weight"
                         android:imeOptions="actionGo"
                         android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
                         android:singleLine="true"
                         android:textColor="@android:color/black" />
 
@@ -54,7 +64,8 @@
                     <Spinner
                         android:id="@+id/spinner_select_goal"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
                         android:layout_weight="1"
                         android:scrollbars="none"
                         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -64,9 +75,10 @@
                     <Spinner
                         android:id="@+id/spinner_select_gender"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="1"
+
                         android:scrollbars="none"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@android:color/black"
@@ -76,9 +88,11 @@
                     <Spinner
                         android:id="@+id/spinner_physical_activity"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
+
                         android:scrollbars="none"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@android:color/black"
@@ -276,105 +290,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    android:weightSum="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:text="Fruits"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:textColor="@android:color/black" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="-5dp"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Apple" />
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Banana" />
-
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="-5dp"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Grapes" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="-5dp"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Pineapple" />
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Orange" />
-
-                            <CheckBox
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:singleLine="true"
-                                android:text="Leafy Veggies"
-                                android:visibility="invisible" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -912,7 +829,7 @@
                     <Spinner
                         android:id="@+id/spinner_access_gym"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
                         android:scrollbars="none"
@@ -923,9 +840,10 @@
                     <Spinner
                         android:id="@+id/spinner_session"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
+
                         android:scrollbars="none"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@android:color/black"
@@ -934,7 +852,7 @@
                     <Spinner
                         android:id="@+id/spinner_training"
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:scrollbars="none"
@@ -947,12 +865,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginRight="5dp"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
+                        android:background="@drawable/editext_border"
                         android:hint="If any health or medical problems"
                         android:imeOptions="actionGo"
                         android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
                         android:singleLine="true"
                         android:textColor="@android:color/black" />
 
@@ -961,12 +883,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginRight="5dp"
-                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
+                        android:background="@drawable/editext_border"
                         android:hint="Injuries/Surgeries if any"
                         android:imeOptions="actionGo"
                         android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
                         android:singleLine="true"
                         android:textColor="@android:color/black" />
 
@@ -974,20 +900,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginRight="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:hint="Injuries/Surgeries if any"
-                        android:imeOptions="actionGo"
-                        android:maxLines="1"
                         android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editext_border"
+                        android:hint="Injuries/Surgeries if any"
+                        android:imeOptions="actionGo"
+                        android:maxLines="1"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
                         android:singleLine="true"
                         android:textColor="@android:color/black" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
 
             <Button
                 android:id="@+id/btnCreateAccount"
@@ -997,6 +926,7 @@
                 android:background="@color/colorAccent"
                 android:text="Create Account"
                 android:textAllCaps="false" />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

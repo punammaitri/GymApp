@@ -37,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.llBlogs:
                 break;
             case R.id.llNutrition:
+                startActivity(new Intent(this, NutritionDietActivity.class));
                 break;
             case R.id.llProfile:
                 startActivity(new Intent(this, AddDetailsActivity.class));
@@ -45,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(this, AllWorkoutPlannerActivity.class));
                 break;
             case R.id.llSetting:
+                startActivity(new Intent(this, SettingActivity.class));
                 break;
         }
     }

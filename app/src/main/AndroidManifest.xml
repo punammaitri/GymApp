@@ -19,7 +19,7 @@
 
         <activity
             android:name=".AddWorkoutPlannerActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
 
         <activity
             android:name=".BlogsVideoActivity"

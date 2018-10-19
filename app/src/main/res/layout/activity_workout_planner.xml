@@ -4,97 +4,226 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_add_exercise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
 
-
-        <android.support.v7.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/txtSelectDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="10dp"
-                    android:text="Select Day"
-                    android:textColor="@android:color/black" />
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Select Day"
+                android:textColor="@android:color/black" />
 
 
-                <Spinner
-                    android:id="@+id/spinner_select_day"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:scrollbars="none"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@color/lightGray" />
+            <Spinner
+                android:id="@+id/spinner_select_day"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtSelectDay"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/lightGray" />
 
-                <EditText
-                    android:id="@+id/edt_exercise_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:hint="Exercise name"
-                    android:imeOptions="actionGo"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/edt_exercise_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_select_day"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Exercise name"
+                android:imeOptions="actionGo"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
 
 
-                <EditText
-                    android:id="@+id/edt_weight"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:hint="Weight range"
-                    android:imeOptions="actionGo"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/edt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_exercise_name"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Weight range"
+                android:imeOptions="actionGo"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
 
-                <EditText
-                    android:id="@+id/edt_reps"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:hint="Reps"
-                    android:imeOptions="actionDone"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    android:textColor="@android:color/black" />
+            <EditText
+                android:id="@+id/edt_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_weight"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Reps"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
 
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/btnAddExercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_reps"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                android:text="Add Exercise"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
 
-        <Button
-            android:id="@+id/btnAddExercise"
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_nutrition_diet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="6dp"
+        android:visibility="visible"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:background="@color/colorAccent"
-            android:text="Add Exercise"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtSelectDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Select Day"
+                android:textColor="@android:color/black" />
+
+
+            <Spinner
+                android:id="@+id/spinner_select_days"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtSelectDays"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/lightGray" />
+
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_select_days"
+                android:timePickerMode="spinner" />
+
+            <EditText
+                android:id="@+id/edt_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timepicker"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Add meal"
+                android:imeOptions="actionGo"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_meal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Add name"
+                android:imeOptions="actionGo"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edt_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_border"
+                android:hint="Add quantity"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnAddNutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_qty"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                android:text="Add Nutrition"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>
